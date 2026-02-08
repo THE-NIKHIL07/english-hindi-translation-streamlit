@@ -34,4 +34,3 @@ venv/
 htmlcov/
 *.pytest_cache/
 
-# Git LFS will handle large files like .h5 if tracked
