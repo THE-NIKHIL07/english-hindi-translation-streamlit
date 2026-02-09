@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: english-hindi-translator
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    runtime: python-3.10.11

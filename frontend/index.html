@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Hindi | AI Translator</title>
+
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+
+    
+    <div class="theme-toggle">
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+  
+    <header class="header">
+        <div class="header-content">
+            <h1>
+                <span class="gradient-text">English → Hindi Translator</span>
+            </h1>
+            <p class="subtitle">Custom Transformer Model</p>
+        </div>
+    </header>
+
+   
+    <main class="main">
+
+     
+        <div class="translator-card">
+
+            <div class="input-section">
+                <div class="input-label">
+                    <span>Enter English Text</span>
+                </div>
+
+                <div class="input-wrapper">
+                    <textarea
+                        id="english-text"
+                        class="text-input"
+                        placeholder="Type your English text here..."
+                        rows="5"
+                    ></textarea>
+
+                    <div class="input-stats">
+                        <span id="char-count">0</span> characters
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="translate-action">
+                <button id="translate-btn" class="translate-btn">
+                    Translate to Hindi
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div class="output-label">
+                    <span>Hindi Translation</span>
+                </div>
+
+                <div class="output-wrapper">
+                    <div id="translation-output" class="translation-output">
+                        <div class="placeholder">
+                            <i class="fas fa-language"></i>
+                            <p>Hindi translation will appear here</p>
+                        </div>
+                    </div>
+
+                    <div class="output-info">
+                        <div class="processing-time">
+                            <span id="processing-time">Ready to translate</span>
+                        </div>
+
+                        <button id="copy-btn" class="copy-btn">
+                            Copy Translation
+                        </button>
+                    </div>
+                </div>
+
+                <div id="accuracy-note" class="accuracy-note hidden">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Note: Translation might not always work accurately.</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="model-info">
+            <div class="model-card">
+                <h3>
+                    <i class="fas fa-microchip"></i>
+                    Model Specifications
+                </h3>
+
+                <div class="model-stats">
+                    <div class="stat">
+                        <div class="stat-label">Model Type</div>
+                        <div class="stat-value">Custom Transformer</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-label">Encoder / Decoder Layers</div>
+                        <div class="stat-value" id="layers">2</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-label">Embedding Size</div>
+                        <div class="stat-value" id="embed-dim">256</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-label">Attention Heads</div>
+                        <div class="stat-value" id="heads">4</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-label">Sequence Length</div>
+                        <div class="stat-value">40 tokens</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-label">Vocabulary Size</div>
+                        <div class="stat-value">25,000</div>
+                    </div>
+                </div>
+
+                <div class="developer-info">
+                    <i class="fas fa-code"></i>
+                    <span>Developed by THE-NIKHIL07</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span>Neural Machine Translation System</span>
+            </div>
+            <div class="footer-right">
+                <span>THE-NIKHIL07 © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<div id="notification" class="notification"></div>
+
+<script src="/frontend/script.js"></script>
+</body>
+</html>

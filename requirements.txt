@@ -1,4 +1,10 @@
 tensorflow==2.13.0
 numpy>=1.22,<1.25
 streamlit==1.29.0
-tensorflow-text==2.13.0
+# tensorflow-text==2.13.0
+fastapi
+uvicorn[standard]
+jinja2
+pydantic
+python-multipart
+typing-extensions
